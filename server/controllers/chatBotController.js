@@ -2,27 +2,11 @@
  module.exports = {
     create(req, res) {
         console.log(req.body.queryResult.parameters);
-        if(req.body.queryResult.parameters.fetch_all == "help required"){
-
+        if(req.body.queryResult.parameters.fetch_all && 
+            req.body.queryResult.parameters.fetch_all == "help required"){
             var speech = "First conversation.";
-
-                    return res.json({
-
-                        fulfillmentText: speech,
-                        fulfillmentMessages: [{
-                          simpleResponses: {
-                            simpleResponses: [{
-                              "textToSpeech": "textToSpeech",
-                              "displayText": speech
-                            }]
-                          }
-                        }],
-                        source: "webhook-sample"
-                    });
         }
-
-
-        if (req.body.queryResult.parameters.account_information == "contact number"
+        else if (req.body.queryResult.parameters.account_information == "contact number"
             && req.body.queryResult.parameters.account_information) {
             var speech = "999999999";
          }
