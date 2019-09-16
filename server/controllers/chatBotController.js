@@ -3,7 +3,9 @@
     create(req, res) {
 
         if(req.body.queryResult.parameters.fetch_all == "help required"){
+
             var speech = "First conversation.";
+            console.log("fetch_all: "+speech);
         }
 
 
