@@ -1,0 +1,794 @@
+{
+	"id": "0eb3e039-a5a3-306d-74b3-398e9868eb8d",
+	"name": "Dialogflow",
+	"description": "",
+	"order": [
+		"c346f2d6-17e6-0605-ade6-df303d07a9e2",
+		"ad202e07-795b-f1f4-7d01-7475cfc110b8",
+		"a8573b08-c9d6-5ce1-ca2c-d9498da517ce",
+		"28569b4d-fa17-423a-710f-a3c6d095489d",
+		"b24bbd66-9946-ebcb-3ce3-a0bf4610fdc9",
+		"2bdceef8-1f41-9cea-f528-bdcf39c2a7a4",
+		"8105f8b6-4826-2008-f819-80e828c0e0bd",
+		"340cdc34-11ab-8c51-10e9-bd7e21aa965b",
+		"5f7dc31f-7647-8644-5bbf-1ab918dae4af",
+		"d14fb7ca-92c2-1211-1b48-5eb7892603a6",
+		"f142b9fd-e4e0-9ff8-0c5d-904320c24734"
+	],
+	"folders": [
+		{
+			"id": "cd46ee4f-0b16-8dae-d25c-6c971640026a",
+			"name": "Weather_Analyzer",
+			"description": "",
+			"order": [
+				"9f8b7602-a8ee-64dc-8850-7c7bcb75059d",
+				"f00f4434-39fe-ecdf-0e65-eaec7ac9c8ef",
+				"42fee918-f7ab-3b3e-3968-9cbb134a5788",
+				"1d66aca4-5e26-4fda-95a7-664f004edbae",
+				"f7a96e26-95d0-d5da-570d-f5fdbcb6d063",
+				"aa0f60ca-90d6-82d6-9b03-e43eb0c5401f",
+				"9bfa5c20-5e2a-9b92-65a3-f9b9ef1c294a",
+				"f4036072-a0a2-e134-5148-380224016cac",
+				"b3f70794-1e42-6a43-97d3-ffde010c89dd",
+				"5c26ee2c-9512-8f9d-3914-30d77d21999e",
+				"7fc54ca8-82a4-fe22-3ddc-5a8ec7f9b77d",
+				"1c2dae86-68bf-dcce-6526-2fca7bee2edd",
+				"46b9b111-b5da-4e73-3493-7d53a3683d03"
+			],
+			"folders_order": [],
+			"owner": 0,
+			"collectionId": "0eb3e039-a5a3-306d-74b3-398e9868eb8d"
+		}
+	],
+	"folders_order": [
+		"cd46ee4f-0b16-8dae-d25c-6c971640026a"
+	],
+	"timestamp": 0,
+	"owner": 0,
+	"public": false,
+	"requests": [
+		{
+			"id": "1c2dae86-68bf-dcce-6526-2fca7bee2edd",
+			"headers": "apikey: biqDDuMNJqj1TmQmMk2OwZGGIgEIVMg5\n",
+			"headerData": [
+				{
+					"key": "apikey",
+					"value": "biqDDuMNJqj1TmQmMk2OwZGGIgEIVMg5",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "https://api.climacell.co/v3/weather/forecast/hourly?lat=33.74&lon=-84.39&unit_system=si&fields=temp:F&start_time=now",
+			"folder": "cd46ee4f-0b16-8dae-d25c-6c971640026a",
+			"queryParams": [
+				{
+					"key": "lat",
+					"value": "33.74",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "lon",
+					"value": "-84.39",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "unit_system",
+					"value": "si",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "fields",
+					"value": "temp:F",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "start_time",
+					"value": "now",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				}
+			],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": [],
+			"dataMode": "params",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1567842294033,
+			"name": "Climacell_hourly",
+			"description": "",
+			"collectionId": "0eb3e039-a5a3-306d-74b3-398e9868eb8d",
+			"responses": []
+		},
+		{
+			"id": "1d66aca4-5e26-4fda-95a7-664f004edbae",
+			"headers": "",
+			"headerData": [],
+			"url": "https://weather-data-analyzer.apps.pp01i.edc1.cf.ford.com/weatherDataAnalyzer/v1/weather",
+			"folder": "cd46ee4f-0b16-8dae-d25c-6c971640026a",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": [],
+			"dataMode": "params",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1567878280957,
+			"name": "Weather_Analyzer_PCF",
+			"description": "",
+			"collectionId": "0eb3e039-a5a3-306d-74b3-398e9868eb8d",
+			"responses": []
+		},
+		{
+			"id": "28569b4d-fa17-423a-710f-a3c6d095489d",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8000/api/conversations",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1567767105237,
+			"name": "ExpressJsApiPostController_local",
+			"description": "",
+			"collectionId": "0eb3e039-a5a3-306d-74b3-398e9868eb8d",
+			"responses": [],
+			"rawModeData": "{\n\t\"id\":2,\n\t\"title\":\"second conversation\",\n\t\"updatedAt\": \"2019-09-05T10:55:57.692Z\",\n\t\"createdAt\":\"2019-09-05T10:55:57.692Z\"\n}"
+		},
+		{
+			"id": "2bdceef8-1f41-9cea-f528-bdcf39c2a7a4",
+			"headers": "",
+			"headerData": [],
+			"url": "http://localhost:8000/api/conversations",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": null,
+			"dataMode": "params",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1567707074795,
+			"name": "ExpressJsApiGetController_local",
+			"description": "",
+			"collectionId": "0eb3e039-a5a3-306d-74b3-398e9868eb8d",
+			"responses": []
+		},
+		{
+			"id": "340cdc34-11ab-8c51-10e9-bd7e21aa965b",
+			"headers": "",
+			"headerData": [],
+			"url": "http://localhost:8080/weightageService/v1/weightage?weightage=50",
+			"queryParams": [
+				{
+					"key": "weightage",
+					"value": "50",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				}
+			],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": null,
+			"dataMode": "params",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1568127990443,
+			"name": "GetWeightage",
+			"description": "",
+			"collectionId": "0eb3e039-a5a3-306d-74b3-398e9868eb8d",
+			"responses": []
+		},
+		{
+			"id": "42fee918-f7ab-3b3e-3968-9cbb134a5788",
+			"headers": "",
+			"headerData": [],
+			"url": "http://localhost:8081/weatherDataAnalyzer/v1/weather/dateTime?dateTime=2019-08-29T18:42:00.000",
+			"folder": "cd46ee4f-0b16-8dae-d25c-6c971640026a",
+			"queryParams": [
+				{
+					"key": "dateTime",
+					"value": "2019-08-29T18:42:00.000",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				}
+			],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": [],
+			"dataMode": "params",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1567085597229,
+			"name": "GET Date Time local",
+			"description": "",
+			"collectionId": "0eb3e039-a5a3-306d-74b3-398e9868eb8d",
+			"responses": [],
+			"isFromCollection": true,
+			"collectionRequestId": "f00f4434-39fe-ecdf-0e65-eaec7ac9c8ef"
+		},
+		{
+			"id": "46b9b111-b5da-4e73-3493-7d53a3683d03",
+			"headers": "apikey: biqDDuMNJqj1TmQmMk2OwZGGIgEIVMg5\n",
+			"headerData": [
+				{
+					"key": "apikey",
+					"value": "biqDDuMNJqj1TmQmMk2OwZGGIgEIVMg5",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "https://api.climacell.co/v3/weather/nowcast?lat=40.7128&lon=74.0060×tep=5&unit_system=si&fields=temp:F&start_time=now",
+			"folder": "cd46ee4f-0b16-8dae-d25c-6c971640026a",
+			"queryParams": [
+				{
+					"key": "lat",
+					"value": "40.7128",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "lon",
+					"value": "74.0060×tep=5",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "unit_system",
+					"value": "si",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "fields",
+					"value": "temp:F",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "start_time",
+					"value": "now",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				}
+			],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": [],
+			"dataMode": "params",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1567748990113,
+			"name": "Climacell_now",
+			"description": "",
+			"collectionId": "0eb3e039-a5a3-306d-74b3-398e9868eb8d",
+			"responses": []
+		},
+		{
+			"id": "5c26ee2c-9512-8f9d-3914-30d77d21999e",
+			"name": "IBM_Weather",
+			"description": "",
+			"collectionId": "0eb3e039-a5a3-306d-74b3-398e9868eb8d",
+			"method": "GET",
+			"headers": "",
+			"data": [],
+			"rawModeData": "",
+			"url": "https://api.weather.com/v3/wx/forecast/hourly/2day?geocode=33.74,-84.39&format=json&units=e&language=en-US&apiKey=ddfd7868d437485abd7868d437d85a45",
+			"responses": [],
+			"pathVariableData": [],
+			"queryParams": [
+				{
+					"key": "geocode",
+					"value": "33.74,-84.39"
+				},
+				{
+					"key": "format",
+					"value": "json"
+				},
+				{
+					"key": "units",
+					"value": "e"
+				},
+				{
+					"key": "language",
+					"value": "en-US"
+				},
+				{
+					"key": "apiKey",
+					"value": "ddfd7868d437485abd7868d437d85a45"
+				}
+			],
+			"headerData": [],
+			"collection_id": "0eb3e039-a5a3-306d-74b3-398e9868eb8d",
+			"folder": "cd46ee4f-0b16-8dae-d25c-6c971640026a"
+		},
+		{
+			"id": "5f7dc31f-7647-8644-5bbf-1ab918dae4af",
+			"headers": "",
+			"headerData": [],
+			"url": "https://weightage-service.apps.pp01i.edc1.cf.ford.com/weightageService/v1/weightage?weightage=50",
+			"queryParams": [
+				{
+					"key": "weightage",
+					"value": "50",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				}
+			],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": null,
+			"dataMode": "params",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1568362420646,
+			"name": "GetWeightage PCF",
+			"description": "",
+			"collectionId": "0eb3e039-a5a3-306d-74b3-398e9868eb8d",
+			"responses": []
+		},
+		{
+			"id": "7fc54ca8-82a4-fe22-3ddc-5a8ec7f9b77d",
+			"name": "IBM_Weather_Current",
+			"description": "",
+			"collectionId": "0eb3e039-a5a3-306d-74b3-398e9868eb8d",
+			"method": "GET",
+			"headers": "",
+			"data": [],
+			"rawModeData": "",
+			"pathVariables": {},
+			"url": "https://api.weather.com/v3/wx/forecast/hourly/2day?geocode=33.74,-84.39&format=json&units=e&language=en-US&apiKey=ddfd7868d437485abd7868d437d85a45",
+			"responses": [],
+			"pathVariableData": [],
+			"queryParams": [
+				{
+					"key": "geocode",
+					"value": "33.74,-84.39"
+				},
+				{
+					"key": "format",
+					"value": "json"
+				},
+				{
+					"key": "units",
+					"value": "e"
+				},
+				{
+					"key": "language",
+					"value": "en-US"
+				},
+				{
+					"key": "apiKey",
+					"value": "ddfd7868d437485abd7868d437d85a45"
+				}
+			],
+			"headerData": [],
+			"collection_id": "0eb3e039-a5a3-306d-74b3-398e9868eb8d",
+			"folder": "cd46ee4f-0b16-8dae-d25c-6c971640026a",
+			"isFromCollection": true,
+			"collectionRequestId": "5c26ee2c-9512-8f9d-3914-30d77d21999e"
+		},
+		{
+			"id": "8105f8b6-4826-2008-f819-80e828c0e0bd",
+			"headers": "",
+			"headerData": [],
+			"url": "http://localhost:8000/api/conversations",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": null,
+			"dataMode": "params",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1567707074795,
+			"name": "ExpressJsApiGetController_heroku",
+			"description": "",
+			"collectionId": "0eb3e039-a5a3-306d-74b3-398e9868eb8d",
+			"responses": [],
+			"isFromCollection": true,
+			"collectionRequestId": "2bdceef8-1f41-9cea-f528-bdcf39c2a7a4"
+		},
+		{
+			"id": "9bfa5c20-5e2a-9b92-65a3-f9b9ef1c294a",
+			"headers": "",
+			"headerData": [],
+			"url": "https://weather-data-analyzer.apps.pp01i.edc1.cf.ford.com/weatherDataAnalyzer/v1/weather/dateTimes",
+			"folder": "cd46ee4f-0b16-8dae-d25c-6c971640026a",
+			"queryParams": [
+				{
+					"key": "dateTime",
+					"value": "1-SEPTEMBER-2019 12:0",
+					"equals": true,
+					"description": "",
+					"enabled": false
+				}
+			],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": [],
+			"dataMode": "params",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1567181431635,
+			"name": "GET Date Time local",
+			"description": "",
+			"collectionId": "0eb3e039-a5a3-306d-74b3-398e9868eb8d",
+			"responses": []
+		},
+		{
+			"id": "9f8b7602-a8ee-64dc-8850-7c7bcb75059d",
+			"name": "Weather_Analyzer_Local",
+			"description": "",
+			"collectionId": "0eb3e039-a5a3-306d-74b3-398e9868eb8d",
+			"method": "GET",
+			"headers": "",
+			"data": [],
+			"rawModeData": "",
+			"url": "http://localhost:8081/weatherDataAnalyzer/v1/weather",
+			"responses": [],
+			"pathVariableData": [],
+			"queryParams": [],
+			"headerData": [],
+			"collection_id": "0eb3e039-a5a3-306d-74b3-398e9868eb8d",
+			"folder": "cd46ee4f-0b16-8dae-d25c-6c971640026a"
+		},
+		{
+			"id": "a8573b08-c9d6-5ce1-ca2c-d9498da517ce",
+			"headers": "",
+			"headerData": [],
+			"url": "http://localhost:8000",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": null,
+			"dataMode": "params",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1567697108585,
+			"name": "ExpressJsApiGet",
+			"description": "",
+			"collectionId": "0eb3e039-a5a3-306d-74b3-398e9868eb8d",
+			"responses": []
+		},
+		{
+			"id": "aa0f60ca-90d6-82d6-9b03-e43eb0c5401f",
+			"headers": "",
+			"headerData": [],
+			"url": "https://weather-data-analyzer.apps.pp01i.edc1.cf.ford.com/weatherDataAnalyzer/v1/weather/dateTime?dateTime=1-SEPTEMBER-2019 12:0",
+			"folder": "cd46ee4f-0b16-8dae-d25c-6c971640026a",
+			"queryParams": [
+				{
+					"key": "dateTime",
+					"value": "1-SEPTEMBER-2019 12:0",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				}
+			],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": [],
+			"dataMode": "params",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1567178224556,
+			"name": "GET Weather Date For Time PCF",
+			"description": "",
+			"collectionId": "0eb3e039-a5a3-306d-74b3-398e9868eb8d",
+			"responses": []
+		},
+		{
+			"id": "ad202e07-795b-f1f4-7d01-7475cfc110b8",
+			"headers": "",
+			"headerData": [],
+			"url": "",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "GET",
+			"collectionId": "0eb3e039-a5a3-306d-74b3-398e9868eb8d",
+			"data": null,
+			"dataMode": "params",
+			"name": "Firebase",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1567695472824,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		},
+		{
+			"id": "b24bbd66-9946-ebcb-3ce3-a0bf4610fdc9",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "https://convesation-store-service.herokuapp.com/api/conversations",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1567768367343,
+			"name": "ExpressJsApiPostController_heroku",
+			"description": "",
+			"collectionId": "0eb3e039-a5a3-306d-74b3-398e9868eb8d",
+			"responses": [],
+			"rawModeData": "{\n\t\"id\":1,\n\t\"title\":\"First conversation\",\n\t\"updatedAt\": \"2019-09-05T10:55:57.692Z\",\n\t\"createdAt\":\"2019-09-05T10:55:57.692Z\"\n}"
+		},
+		{
+			"id": "b3f70794-1e42-6a43-97d3-ffde010c89dd",
+			"headers": "",
+			"headerData": [],
+			"url": "https://weather-data-analyzer.apps.pp01i.edc1.cf.ford.com/weatherDataAnalyzer/v1/compareWeather",
+			"folder": "cd46ee4f-0b16-8dae-d25c-6c971640026a",
+			"queryParams": [
+				{
+					"key": "dateTime",
+					"value": "1-SEPTEMBER-2019 12:0",
+					"equals": true,
+					"description": "",
+					"enabled": false
+				}
+			],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": [],
+			"dataMode": "params",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1568133535715,
+			"name": "GET Compare Weather Data PCF",
+			"description": "",
+			"collectionId": "0eb3e039-a5a3-306d-74b3-398e9868eb8d",
+			"responses": []
+		},
+		{
+			"id": "c346f2d6-17e6-0605-ade6-df303d07a9e2",
+			"name": "Intrinio",
+			"description": "",
+			"collectionId": "0eb3e039-a5a3-306d-74b3-398e9868eb8d",
+			"method": "GET",
+			"helperAttributes": {},
+			"headers": "",
+			"data": [],
+			"rawModeData": "",
+			"url": "https://api.intrinio.com/historical_data/?ticker=AAPL&item=open_price&start_date=2019-08-20&end_date=2019-08-20",
+			"responses": [],
+			"pathVariableData": [],
+			"queryParams": [
+				{
+					"key": "ticker",
+					"value": "AAPL"
+				},
+				{
+					"key": "item",
+					"value": "open_price"
+				},
+				{
+					"key": "start_date",
+					"value": "2019-08-20"
+				},
+				{
+					"key": "end_date",
+					"value": "2019-08-20"
+				}
+			],
+			"headerData": [],
+			"collection_id": "0eb3e039-a5a3-306d-74b3-398e9868eb8d"
+		},
+		{
+			"id": "d14fb7ca-92c2-1211-1b48-5eb7892603a6",
+			"headers": "",
+			"headerData": [],
+			"url": "http://localhost:8080/weightageService/v1/weightage",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": null,
+			"dataMode": "params",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1568128014009,
+			"name": "GetWeightage",
+			"description": "",
+			"collectionId": "0eb3e039-a5a3-306d-74b3-398e9868eb8d",
+			"responses": []
+		},
+		{
+			"id": "f00f4434-39fe-ecdf-0e65-eaec7ac9c8ef",
+			"headers": "",
+			"headerData": [],
+			"url": "http://localhost:8081/weatherDataAnalyzer/v1/weather/dateTime?dateTime=2019-08-29T18:42:00.000",
+			"folder": "cd46ee4f-0b16-8dae-d25c-6c971640026a",
+			"queryParams": [
+				{
+					"key": "dateTime",
+					"value": "2019-08-29T18:42:00.000",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				}
+			],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": [],
+			"dataMode": "params",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1567085597229,
+			"name": "GET Weather Data For Time Local",
+			"description": "",
+			"collectionId": "0eb3e039-a5a3-306d-74b3-398e9868eb8d",
+			"responses": []
+		},
+		{
+			"id": "f142b9fd-e4e0-9ff8-0c5d-904320c24734",
+			"headers": "",
+			"headerData": [],
+			"url": "https://weightage-service.apps.pp01i.edc1.cf.ford.com/weightageService/v1/weightage",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": null,
+			"dataMode": "params",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1568362446946,
+			"name": "GetWeightage PCF",
+			"description": "",
+			"collectionId": "0eb3e039-a5a3-306d-74b3-398e9868eb8d",
+			"responses": []
+		},
+		{
+			"id": "f4036072-a0a2-e134-5148-380224016cac",
+			"headers": "",
+			"headerData": [],
+			"url": "http://localhost:8081/weatherDataAnalyzer/v1/compareWeather",
+			"folder": "cd46ee4f-0b16-8dae-d25c-6c971640026a",
+			"queryParams": [
+				{
+					"key": "dateTime",
+					"value": "1-SEPTEMBER-2019 12:0",
+					"equals": true,
+					"description": "",
+					"enabled": false
+				}
+			],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": [],
+			"dataMode": "params",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1568131192234,
+			"name": "GET Compare Weather Data local",
+			"description": "",
+			"collectionId": "0eb3e039-a5a3-306d-74b3-398e9868eb8d",
+			"responses": []
+		},
+		{
+			"id": "f7a96e26-95d0-d5da-570d-f5fdbcb6d063",
+			"headers": "",
+			"headerData": [],
+			"url": "https://weather-data-analyzer.apps.pp01i.edc1.cf.ford.com/weatherDataAnalyzer/v1/weather",
+			"folder": "cd46ee4f-0b16-8dae-d25c-6c971640026a",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": [],
+			"dataMode": "params",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1567878280957,
+			"name": "Weather_Analyzer_PCF_All_Times",
+			"description": "",
+			"collectionId": "0eb3e039-a5a3-306d-74b3-398e9868eb8d",
+			"responses": [],
+			"isFromCollection": true,
+			"collectionRequestId": "1d66aca4-5e26-4fda-95a7-664f004edbae"
+		}
+	]
+}
