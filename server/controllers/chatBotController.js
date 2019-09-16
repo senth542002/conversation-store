@@ -5,7 +5,20 @@
         if(req.body.queryResult.parameters.fetch_all == "help required"){
 
             var speech = "First conversation.";
-            console.log("fetch_all: "+speech);
+
+                    return res.json({
+
+                        fulfillmentText: speech,
+                        fulfillmentMessages: [{
+                          simpleResponses: {
+                            simpleResponses: [{
+                              "textToSpeech": "textToSpeech",
+                              "displayText": speech
+                            }]
+                          }
+                        }],
+                        source: "webhook-sample"
+                    });
         }
 
 
