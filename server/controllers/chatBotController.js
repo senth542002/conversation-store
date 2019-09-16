@@ -36,7 +36,22 @@
       list(req, res) {
         return ConversationDetails
           .findAll()
-          .then(conv => res.status(200).send(conv))
+          .then(conv => {
+            //res.status(200).send(conv)
+            console.log(conv[0]['title'])
+            res.json({
+                        fulfillmentText: conv,
+                        fulfillmentMessages: [{
+                          simpleResponses: {
+                            simpleResponses: [{
+                              "textToSpeech": "textToSpeech",
+                              "displayText": speech
+                            }]
+                          }
+                        }],
+                        source: "webhook-sample"
+                    });
+          })
           .catch(error => res.status(400).send(error));
       },
  };
