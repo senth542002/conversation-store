@@ -20,7 +20,7 @@
 
         return res.json({
 
-            fulfillmentText: "fulfillmentText",
+            fulfillmentText: speech,
             fulfillmentMessages: [{
               simpleResponses: {
                 simpleResponses: [{
