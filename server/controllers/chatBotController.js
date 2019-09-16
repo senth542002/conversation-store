@@ -1,6 +1,12 @@
 
  module.exports = {
     create(req, res) {
+
+        if(req.body.queryResult.parameters.fetch_all == "help required"){
+            var speech = ConversationDetails.findAll();
+        }
+
+
         if (req.body.queryResult.parameters.account_information == "contact number"
             && req.body.queryResult.parameters.account_information) {
             var speech = "999999999";
