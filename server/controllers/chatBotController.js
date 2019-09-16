@@ -3,7 +3,7 @@
     create(req, res) {
 
         if(req.body.queryResult.parameters.fetch_all == "help required"){
-            var speech = ConversationDetails.findAll();
+            var speech = "First conversation.";
         }
 
 
