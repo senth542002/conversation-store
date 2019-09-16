@@ -1,7 +1,7 @@
 
  module.exports = {
     create(req, res) {
-
+        console.log(req.body.queryResult.parameters);
         if(req.body.queryResult.parameters.fetch_all == "help required"){
 
             var speech = "First conversation.";
