@@ -12,8 +12,10 @@ module.exports = (app) => {
   app.post('/api/conversations', conversationDetailsController.create);
   app.get('/api/conversations', conversationDetailsController.list);
   app.post('/api/chatbot', chatbotDetailsController.create);
+
   app.post('/api/weightage',weightageDetailsController.create);
   app.put('/api/weightage/:id', weightageDetailsController.update);
+  app.get('/api/weightage/:id', weightageDetailsController.fetch);
   app.get('/api/weightage', weightageDetailsController.list);
   app.delete('/api/weightage', weightageDetailsController.deleteAll);
 
