@@ -11,10 +11,10 @@
       },
 
       update(req, res) {
-      console.log('Weightage Info: '+req.body.weightage)
+      console.log('Weightage Info: '+req.params.weightage)
       console.log('Weightage ID: '+req.params.id)
         return WeightageDetails
-          .update({weightage: req.body.weightage},
+          .update({weightage: req.params.weightage},
           {where: {id : req.params.id}})
           .then(weight => res.status(201).send(weight))
           .catch(error => res.status(400).send(error));
