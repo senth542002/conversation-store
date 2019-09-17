@@ -1,6 +1,8 @@
 const conversationDetailsController = require('../controllers').conversationDetails;
 const chatbotDetailsController = require('../controllers').chatBotController;
 const weightageDetailsController = require('../controllers').weightageDetailsController;
+const productDetailsController = require('../controllers').productDetailsController;
+const notificationDetailsController = require('../controllers').notificationDetailsController;
 
 module.exports = (app) => {
   app.get('/api', (req, res) => res.status(200).send({
@@ -11,5 +13,17 @@ module.exports = (app) => {
   app.get('/api/conversations', conversationDetailsController.list);
   app.post('/api/chatbot', chatbotDetailsController.create);
   app.post('/api/weightage',weightageDetailsController.create);
+  app.put('/api/weightage/:id', weightageDetailsController.update);
   app.get('/api/weightage', weightageDetailsController.list);
+  app.delete('/api/weightage', weightageDetailsController.deleteAll);
+
+  app.post('/api/notification',notificationDetailsController.create);
+  app.put('/api/notification/:id', notificationDetailsController.update);
+  app.get('/api/notification', notificationDetailsController.list);
+  app.delete('/api/notification', notificationDetailsController.deleteAll);
+
+  app.post('/api/product',productDetailsController.create);
+  app.put('/api/product/:id', productDetailsController.update);
+  app.get('/api/product', productDetailsController.list);
+  app.delete('/api/product', productDetailsController.deleteAll);
 };
