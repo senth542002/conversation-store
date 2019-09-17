@@ -11,6 +11,8 @@
       },
 
       update(req, res) {
+      console.log('Weightage Info: '+req.body.weightage)
+      console.log('Weightage ID: '+req.params.id)
         return WeightageDetails
           .update({weightage: req.body.weightage},
           {where: {id : req.params.id}})
