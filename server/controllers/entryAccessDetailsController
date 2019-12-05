@@ -2,6 +2,7 @@ const EntryAccessDetails = require('../models').EntryAccessDetails;
 
 module.exports = {
     create(req, res) {
+
         return EntryAccessDetails
           .create({
             name: req.body.name,
@@ -12,7 +13,12 @@ module.exports = {
       },
       list(req, res) {
               return EntryAccessDetails
-                .findAll()
+                .findAll({
+                    where:{},
+                    order:[
+                        ['createdAt','DESC']
+                    ],
+                })
                 .then(accessDetails => res.status(200).send(accessDetails))
                 .catch(error => res.status(400).send(error));
             },
