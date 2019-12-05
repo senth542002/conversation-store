@@ -3,6 +3,7 @@ const chatbotDetailsController = require('../controllers').chatBotController;
 const weightageDetailsController = require('../controllers').weightageDetailsController;
 const productDetailsController = require('../controllers').productDetailsController;
 const notificationDetailsController = require('../controllers').notificationDetailsController;
+const entryAccessDetailsController = require('../controllers').entryAccessDetailsController;
 
 module.exports = (app) => {
   app.get('/api', (req, res) => res.status(200).send({
