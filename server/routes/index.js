@@ -34,7 +34,7 @@ module.exports = (app) => {
     const result = entryAccessDetailsController.list(req, res);
     result.then(data => {
         console.log("console: "+data)
-        console.log("console1: "+data.body)
+        console.log("console1: "+JSON.stringify(data))
     });
             });
   app.get('/api/entryAccess', entryAccessDetailsController.list);
