@@ -32,7 +32,9 @@ module.exports = (app) => {
 
   app.post('/api/entryAccess', function(req, res){
     const data = entryAccessDetailsController.list(req, res);
-    console.log("console:"+data)
+    data.then(function(value) {
+        console.log("console:"+data[0])
+    });
   });
   app.get('/api/entryAccess', entryAccessDetailsController.list);
 };
