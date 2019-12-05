@@ -30,6 +30,9 @@ module.exports = (app) => {
   app.get('/api/product', productDetailsController.list);
   app.delete('/api/product', productDetailsController.deleteAll);
 
-  app.post('/api/entryAccess',entryAccessDetailsController.create);
+  app.post('/api/entryAccess', function(req, res){
+    const data = entryAccessDetailsController.list(req, res);
+    console.log("console:"+data)
+  });
   app.get('/api/entryAccess', entryAccessDetailsController.list);
 };
