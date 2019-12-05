@@ -1,9 +1,9 @@
 const EntryAccessDetails = require('../models').EntryAccessDetails;
-
+const entryAccessDetailsController = require('../controllers').entryAccessDetailsController;
 module.exports = {
     create(req, res) {
 
-    const data = EntryAccessDetailsController.list(req, res);
+    const data = entryAccessDetailsController.list(req, res);
     console.log("console:"+data)
     if(data[0].name == req.body.name) {
         return
