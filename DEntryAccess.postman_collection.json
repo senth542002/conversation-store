@@ -1,0 +1,61 @@
+{
+	"info": {
+		"_postman_id": "036281ab-c358-4ea3-a58c-a11dff54cc08",
+		"name": "DEntryAccess",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GetEntryAccess_node",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://conversation-store-service.herokuapp.com/api/entryAccess",
+					"protocol": "https",
+					"host": [
+						"conversation-store-service",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"entryAccess"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PostEntryAccess_node",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\n\t\"name\":\"Senthilkumar\",\n\t\"message\":\"Success\"\n}"
+				},
+				"url": {
+					"raw": "https://conversation-store-service.herokuapp.com/api/entryAccess",
+					"protocol": "https",
+					"host": [
+						"conversation-store-service",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"entryAccess"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
