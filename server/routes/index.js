@@ -31,10 +31,8 @@ module.exports = (app) => {
   app.delete('/api/product', productDetailsController.deleteAll);
 
   app.post('/api/entryAccess', function(req, res){
-    const data = entryAccessDetailsController.list(req, res)
-                 .then(function(response) {
-                    console.log("console:"+response[0])
-                });
+    const result = entryAccessDetailsController.list(req, res);
+    console.log("console:"+result.data)
             });
   app.get('/api/entryAccess', entryAccessDetailsController.list);
 };
