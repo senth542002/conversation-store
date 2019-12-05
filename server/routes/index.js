@@ -28,4 +28,7 @@ module.exports = (app) => {
   app.put('/api/product/:id', productDetailsController.update);
   app.get('/api/product', productDetailsController.list);
   app.delete('/api/product', productDetailsController.deleteAll);
+
+  app.post('/api/entryAccess',entryAccessDetailsController.create);
+  app.get('/api/entryAccess', entryAccessDetailsController.list);
 };

@@ -1,0 +1,19 @@
+const EntryAccessDetails = require('../models').EntryAccessDetails;
+
+module.exports = {
+    create(req, res) {
+        return EntryAccessDetails
+          .create({
+            name: req.body.name,
+            message: req.body.message
+          })
+          .then(accessDetails => res.status(201).send(accessDetails))
+          .catch(error => res.status(400).send(error));
+      },
+      list(req, res) {
+              return EntryAccessDetails
+                .findAll()
+                .then(accessDetails => res.status(200).send(accessDetails))
+                .catch(error => res.status(400).send(error));
+            },
+};
