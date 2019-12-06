@@ -4,6 +4,7 @@ const weightageDetailsController = require('../controllers').weightageDetailsCon
 const productDetailsController = require('../controllers').productDetailsController;
 const notificationDetailsController = require('../controllers').notificationDetailsController;
 const entryAccessDetailsController = require('../controllers').entryAccessDetailsController;
+var models  = require('../models');
 
 module.exports = (app) => {
   app.get('/api', (req, res) => res.status(200).send({
@@ -31,11 +32,28 @@ module.exports = (app) => {
   app.delete('/api/product', productDetailsController.deleteAll);
 
   app.post('/api/entryAccess', function(req, res){
-    const result = entryAccessDetailsController.list(req, res);
-    result.then(data => {
-        console.log("console: "+data)
-        console.log("console1: "+JSON.stringify(data))
-    });
+    /*    const result = entryAccessDetailsController.list(req, res)
+                        .then(data => data.json())
+                        .then( x => {
+                            console.log("console: "+CircularJSON.stringify(x))
+                            console.log("console: "+JSON.stringify(x))
+                        });*/
+    models.EntryAccessDetails
+                    .findAll({
+                        where:{},
+                        order:[
+                            ['createdAt','DESC']
+                        ],
+                    })
+                    .then(accessDetails => {
+                     console.log("console: "+accessDetails[0]['name'])
+                         if(req.body.name != accessDetails[0]['name']) {
+                            return entryAccessDetailsController.create(req, res);
+                         } else {
+                            return res.status(400).send("Duplicate");
+                         }
+                    });
             });
   app.get('/api/entryAccess', entryAccessDetailsController.list);
+  app.get('/api/entryAccessSummary', entryAccessDetailsController.listSummary);
 };
