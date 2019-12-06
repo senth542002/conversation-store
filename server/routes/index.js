@@ -38,7 +38,7 @@ module.exports = (app) => {
                             console.log("console: "+CircularJSON.stringify(x))
                             console.log("console: "+JSON.stringify(x))
                         });*/
-    models.EntryAccessDetails
+   /* models.EntryAccessDetails
                     .findAll({
                         where:{},
                         order:[
@@ -52,7 +52,8 @@ module.exports = (app) => {
                          } else {
                             return res.status(400).send("Duplicate");
                          }
-                    });
+                    });*/
+    return entryAccessDetailsController.create(req, res);
             });
   app.get('/api/entryAccess', entryAccessDetailsController.list);
   app.get('/api/entryAccessSummary', entryAccessDetailsController.listSummary);
