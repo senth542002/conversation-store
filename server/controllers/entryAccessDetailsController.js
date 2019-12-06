@@ -30,9 +30,9 @@ module.exports = {
                 })
                 .then(accessDetails => {
                     var accessSummary = {
-                        'authorizedEntries' : accessDetails.length,
-                        'unauthorizedEntries' : 0,
-                        'lastAuthorizedUser' : accessDetails[0]['name']
+                        'authorizedEntries' : accessDetails.filter(x => x.message == 'Success').length,
+                        'unauthorizedEntries' : accessDetails.filter(y => y.message == 'Failure').length,
+                        'lastAuthorizedUser' : accessDetails.filter(x => x.message == 'Success')[0]['name']
                     }
                     res.status(200).send(accessSummary)
                 })

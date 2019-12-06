@@ -27,6 +27,67 @@
 			"response": []
 		},
 		{
+			"name": "GetEntryAccessSummary_node",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://conversation-store-service.herokuapp.com/api/entryAccessSummary",
+					"protocol": "https",
+					"host": [
+						"conversation-store-service",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"entryAccessSummary"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetEntryAccess_local",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/api/entryAccess",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"entryAccess"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetEntryAccessSummary_local",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/api/entryAccessSummary",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"entryAccessSummary"
+					]
+				}
+			},
+			"response": []
+		},
+		{
 			"name": "PostEntryAccess_node",
 			"request": {
 				"method": "POST",
@@ -38,7 +99,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n\n\t\"name\":\"Senthilkumar\",\n\t\"message\":\"Success\"\n}"
+					"raw": "{\n\n\t\"name\":\"Sakthi\",\n\t\"message\":\"Success\"\n}"
 				},
 				"url": {
 					"raw": "https://conversation-store-service.herokuapp.com/api/entryAccess",
@@ -48,6 +109,35 @@
 						"herokuapp",
 						"com"
 					],
+					"path": [
+						"api",
+						"entryAccess"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PostEntryAccess_local",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\n\t\"name\":\"Senthilkumar Vedachalam\",\n\t\"message\":\"Success\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/entryAccess",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
 					"path": [
 						"api",
 						"entryAccess"
