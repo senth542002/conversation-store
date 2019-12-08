@@ -4,6 +4,9 @@ const weightageDetailsController = require('./weightageDetailsController');
 const productDetailsController = require('./productDetailsController');
 const notificationDetailsController = require('./notificationDetailsController');
 const entryAccessDetailsController = require('./entryAccessDetailsController');
+const parkingSlotFloorController = require('./parkingSlotFloorController');
+const parkingSlotZoneController = require('./parkingSlotZoneController');
+const parkingSlotNumberController = require('./parkingSlotNumberController');
 
 module.exports = {
   conversationDetails,
@@ -11,5 +14,8 @@ module.exports = {
   weightageDetailsController,
   productDetailsController,
   notificationDetailsController,
-  entryAccessDetailsController
+  entryAccessDetailsController,
+  parkingSlotFloorController,
+  parkingSlotZoneController,
+  parkingSlotNumberController
 };

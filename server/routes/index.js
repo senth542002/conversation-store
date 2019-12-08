@@ -4,6 +4,9 @@ const weightageDetailsController = require('../controllers').weightageDetailsCon
 const productDetailsController = require('../controllers').productDetailsController;
 const notificationDetailsController = require('../controllers').notificationDetailsController;
 const entryAccessDetailsController = require('../controllers').entryAccessDetailsController;
+const parkingSlotFloorController = require('../controllers').parkingSlotFloorController;
+const parkingSlotZoneController = require('../controllers').parkingSlotZoneController;
+const parkingSlotNumberController = require('../controllers').parkingSlotNumberController;
 var models  = require('../models');
 
 module.exports = (app) => {
@@ -57,4 +60,13 @@ module.exports = (app) => {
             });
   app.get('/api/entryAccess', entryAccessDetailsController.list);
   app.get('/api/entryAccessSummary', entryAccessDetailsController.listSummary);
+
+  app.post('/api/parkingSlotFloor', parkingSlotFloorController.create);
+  app.get('/api/parkingSlotFloor', parkingSlotFloorController.list);
+
+  app.post('/api/parkingSlotZone', parkingSlotZoneController.create);
+  app.get('/api/parkingSlotZone', parkingSlotZoneController.list);
+
+  app.post('/api/parkingSlotNumber', parkingSlotNumberController.create);
+  app.get('/api/parkingSlotNumber', parkingSlotNumberController.list);
 };
