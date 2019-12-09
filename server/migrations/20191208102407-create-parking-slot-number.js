@@ -11,6 +11,9 @@ module.exports = {
       name: {
         type: Sequelize.INTEGER
       },
+      available: {
+        type: Sequelize.BOOLEAN
+      },
       createdAt: {
         allowNull: false,
         type: Sequelize.DATE

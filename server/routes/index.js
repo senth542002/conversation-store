@@ -63,6 +63,7 @@ module.exports = (app) => {
 
   app.post('/api/parkingSlotFloor', parkingSlotFloorController.create);
   app.get('/api/parkingSlotFloor', parkingSlotFloorController.list);
+  app.get('/api/nextAvailableParkingSlot', parkingSlotFloorController.nextAvailableParkingSlot);
 
   app.post('/api/parkingSlotZone', parkingSlotZoneController.create);
   app.get('/api/parkingSlotZone', parkingSlotZoneController.list);

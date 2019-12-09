@@ -2,7 +2,8 @@
 
 module.exports = (sequelize, DataTypes) => {
   const ParkingSlotFloor = sequelize.define('ParkingSlotFloor', {
-    name: DataTypes.STRING
+    name: DataTypes.STRING,
+    description: DataTypes.STRING
   }, {});
   ParkingSlotFloor.associate = (models) => {
     ParkingSlotFloor.hasMany(models.ParkingSlotZone, {

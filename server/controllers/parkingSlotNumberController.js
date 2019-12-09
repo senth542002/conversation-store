@@ -5,6 +5,7 @@ module.exports = {
         return ParkingSlotNumber
           .create({
             name: req.body.name,
+            available: req.body.available,
             parkingSlotZoneId: req.body.parkingSlotZoneId
           })
           .then(parkingSlotNumbers => res.status(201).send(parkingSlotNumbers))

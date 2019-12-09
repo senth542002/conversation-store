@@ -1,7 +1,8 @@
 'use strict';
 module.exports = (sequelize, DataTypes) => {
   const ParkingSlotNumber = sequelize.define('ParkingSlotNumber', {
-    name: DataTypes.INTEGER
+    name: DataTypes.INTEGER,
+    available: DataTypes.BOOLEAN
   }, {});
   ParkingSlotNumber.associate = (models) => {
     ParkingSlotNumber.belongsTo(models.ParkingSlotZone, {
